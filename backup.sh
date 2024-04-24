@@ -4,7 +4,7 @@ TIMESTAMP=$(date +%F-%H-%M-%S)
 read -p "Enter source directory: " SOURCE_DIRECTORY
 read -p "Enter destination directory: " DESTINATION DIRECTORY
 
-if [ -d $SOURCE_DIRECTORY && -d $DESTINATION_DIRECTORY ]
+if [ -d $SOURCE_DIRECTORY ] && [ -d $DESTINATION_DIRECTORY ]
 then
     echo "Either of the directories is invalid"
 else
